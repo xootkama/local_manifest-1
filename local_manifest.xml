@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+  <remote name="fajar4561"
+
+          fetch="https://github.com/fajar4561" />
+  <!-- Sync trees -->
+        
+        <project path="device/asus/sdm660-common" name="device_asus_sdm660-common" remote="fajar4561" revision="Q" clone-depth="1" />
+        <project path="device/asus/X00TD" name="device_asus_X00TD" remote="fajar4561" revision="Q" clone-depth="1" />
+        <project path="vendor/asus" name="proprietary_vendor_asus" remote="fajar4561" revision="Q" clone-depth="1" />
+        <project path="kernel/asus/sdm660" name="kernel-asus-sdm660" remote="fajar4561" revision="master" clone-depth="1" />
+
+</manifest>
