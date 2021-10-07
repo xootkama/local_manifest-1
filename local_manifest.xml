@@ -9,7 +9,7 @@
   <!-- Sync trees -->
         <project path="device/asus/X00TD" name="device_asus_X00TD" remote="fajar4561" revision="caf-11" clone-depth="1" />
         <project path="vendor/asus" name="proprietary_vendor_asus" remote="fajar4561" revision="caf" clone-depth="1" />
-        <project path="kernel/asus/sdm660" name="kernel-Asus-X00TD" remote="fajar4561" revision="LA.UM.9.2.r1-03600-SDMxx0.0" clone-depth="1" />
+        <project path="kernel/asus/sdm660" name="Kernel-Asus-SDM660" remote="fajar4561" revision="master" clone-depth="1" />
         <project path="device/asus/sdm660-common" name="device_asus_sdm660-common" remote="fajar4561" revision="caf" clone-depth="1" />
         
         <remove-project name="xd_device_qcom_common" />  
