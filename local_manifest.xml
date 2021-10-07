@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
-
+          
   <remote name="fajar4561"
-
           fetch="https://github.com/fajar4561" />
+  <remote name="project404"
+          fetch="https://github.com/P-404" />        
+
   <!-- Sync trees -->
+        <project path="device/asus/X00TD" name="device_asus_X00TD" remote="fajar4561" revision="caf-11" clone-depth="1" />
+        <project path="vendor/asus" name="proprietary_vendor_asus" remote="fajar4561" revision="caf" clone-depth="1" />
+        <project path="kernel/asus/sdm660" name="kernel-Asus-X00TD" remote="fajar4561" revision="LA.UM.9.2.r1-03600-SDMxx0.0" clone-depth="1" />
+        <project path="device/asus/sdm660-common" name="device_asus_sdm660-common" remote="fajar4561" revision="caf" clone-depth="1" />
         
-        <project path="device/asus/sdm660-common" name="device_asus_sdm660-common" remote="fajar4561" revision="Q" clone-depth="1" />
-        <project path="device/asus/X00TD" name="device_asus_X00TD" remote="fajar4561" revision="Q" clone-depth="1" />
-        <project path="vendor/asus" name="proprietary_vendor_asus" remote="fajar4561" revision="Q" clone-depth="1" />
-        <project path="kernel/asus/sdm660" name="kernel-asus-sdm660" remote="fajar4561" revision="LA.UM.9.2.r1-03600-SDMxx0.0" clone-depth="1" />
-      
-        <remove-project name="LineageOS/android_hardware_qcom_audio" />
-        <project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8998/audio" remote="fajar4561" revision="lineage-17.1-caf-msm8998" clone-depth="1" />
+        <remove-project name="xd_device_qcom_common" />  
+        <remove-project name="hw_media" />
+        <remove-project name="hw_audio" /> 
+        <remove-project name="hw_display" />  
+        <project name="hw_media" path="hardware/qcom-caf/msm8998/media" remote="xyz-prjkt" revision="eleven_caf_msm8998" clone-depth="1" />
+        <project name="hw_audio" path="hardware/qcom-caf/msm8998/audio" remote="xyz-prjkt" revision="eleven_caf_msm8998" clone-depth="1" /> 
+        <project name="hw_display" path="hardware/qcom-caf/msm8998/display" remote="xyz-prjkt" revision="eleven_caf_msm8998" clone-depth="1" /> 
+        <project name="android_device_qcom_common" path="device/qcom/common" remote="project404" revision="rippa" clone-depth="1" />
+        <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="project404" revision="rippa" clone-depth="1" />
+          
 
 </manifest>
